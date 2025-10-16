@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servicios Creativos: Publicidad, Sistemas Web y Apps</title>
+    <meta
+      name="description"
+      content="Páginas web para publicidad, sistemas web, aplicaciones Android, diseño gráfico y agendas personalizadas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Poppins", "ui-sans-serif", "system-ui"] },
+            colors: {
+              roseNeutral: {
+                50: "#fff7fb",
+                100: "#ffeefa",
+                200: "#ffd8ef",
+                300: "#ffc2e3",
+                400: "#f3a7cf",
+                500: "#e48fbc",
+                600: "#cc6aa0",
+                700: "#b04f84",
+                800: "#8d3e6a",
+                900: "#6d3254",
+              },
+            },
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,.08)",
+            },
+            backgroundImage: {
+              "hero-gradient":
+                "radial-gradient(1200px 600px at 10% 10%, rgba(255, 210, 235, .55), transparent), radial-gradient(1000px 600px at 90% 10%, rgba(240, 210, 255, .45), transparent), linear-gradient(180deg, #fff, #fff)",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .glass {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.7);
+      }
+      .card-hover {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <!-- NAV -->
+    <header
+      class="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur border-b border-roseNeutral-200"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <a href="#" class="font-semibold text-roseNeutral-800 text-lg"
+          >Creativa.dev</a
+        >
+        $1<a href="#contacto" class="hover:text-roseNeutral-700">Contacto</a>$2
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/59170173385?text=Hola%2C%20quiero%20cotizar%20mis%20servicios"
+            target="_blank"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold shadow-soft hover:bg-roseNeutral-800"
+            ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
+          >
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg border">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobileNav" class="md:hidden hidden border-t">
+        <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+          <a href="#servicios" class="hover:text-roseNeutral-700">Servicios</a>
+          <a href="#portafolio" class="hover:text-roseNeutral-700"
+            >Portafolio</a
+          >
+          <a href="#proceso" class="hover:text-roseNeutral-700">Proceso</a>
+          <a href="#planes" class="hover:text-roseNeutral-700">Planes</a>
+          <a href="#creatividad" class="hover:text-roseNeutral-700"
+            >Creatividad</a
+          >
+          <a href="#contacto" class="hover:text-roseNeutral-700">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-16 bg-hero-gradient relative overflow-hidden">
+      <div
+        class="absolute -top-24 -right-24 w-[480px] h-[480px] rounded-full bg-roseNeutral-100 blur-3xl opacity-60"
+      ></div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Soluciones digitales
+            <span class="text-roseNeutral-700">creativas</span> para tu negocio
+          </h1>
+          <p class="mt-4 text-slate-600 text-lg">
+            Diseño de páginas web para publicidad, sistemas web a medida,
+            aplicaciones Android, diseño gráfico y agendas personalizadas.
+            Estética cuidada, rendimiento y resultados medibles.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a
+              href="#servicios"
+              class="px-5 py-3 rounded-xl bg-roseNeutral-700 text-white font-semibold shadow-soft hover:bg-roseNeutral-800"
+              >Ver servicios</a
+            >
+            <a
+              href="#contacto"
+              class="px-5 py-3 rounded-xl border font-semibold hover:bg-roseNeutral-50"
+              >Solicitar cotización</a
+            >
+          </div>
+          <div class="mt-6 text-sm text-slate-500">
+            Contacto directo:
+            <a href="mailto:dayana.g.medrano@gmail.com" class="underline"
+              >dayana.g.medrano@gmail.com</a
+            >
+            · <span class="font-semibold">70173385</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl shadow-soft overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+              alt="Creatividad y desarrollo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 bg-white glass rounded-2xl p-4 shadow-soft max-w-xs"
+          >
+            <p class="text-sm font-medium">Sitios con enfoque publicitario</p>
+            <p class="text-xs text-slate-500">
+              Landing pages, funnels, analítica y SEO on‑page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-6">
+          <h2 class="text-3xl font-bold">Servicios</h2>
+          <p class="text-sm text-slate-500 max-w-2xl">
+            Selecciona un servicio para ver detalles sin saturar la página.
+          </p>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Servicio card template -->
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-bullhorn"></i
+              ></span>
+              <h3 class="font-semibold">Páginas web para publicidad</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Landing pages orientadas a conversión, catálogos y minisites con
+              copy y estructura profesional.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-webpub"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-gears"></i
+              ></span>
+              <h3 class="font-semibold">Sistemas web a medida</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Desarrollo de sistemas administrativos, reportes PDF/Excel,
+              roles/usuarios y API.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-sistemas"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-brands fa-android"></i
+              ></span>
+              <h3 class="font-semibold">Aplicaciones Android</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Apps funcionales con notificaciones, login y conexión a servicios.
+              Publicación opcional.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-android"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-pen-nib"></i
+              ></span>
+              <h3 class="font-semibold">Diseño gráfico</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Banners, flyers, identidad visual y material promocional listo
+              para imprimir o publicar.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-diseno"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-calendar-check"></i
+              ></span>
+              <h3 class="font-semibold">Agendas personalizadas</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Agendas y planners digitales o impresos con tu marca, listas para
+              uso o venta.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-agendas"
+            >
+              Ver más
+            </button>
+          </div>
+
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-shield-halved"></i
+              ></span>
+              <h3 class="font-semibold">Soporte y mantenimiento</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Alojamiento, SSL, correos, optimización y copias de seguridad.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-soporte"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="py-16 bg-roseNeutral-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl font-bold">Portafolio</h2>
+          <a href="#contacto" class="text-sm underline"
+            >Solicitar más muestras</a
+          >
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl overflow-hidden shadow-soft bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1600&auto=format&fit=crop"
+              alt="Landing publicitaria"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="font-medium">Landing publicitaria</p>
+              <p class="text-sm text-slate-600">
+                Enfoque en conversión con analytics.
+              </p>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-soft bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop"
+              alt="Sistema web"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="font-medium">Sistema web</p>
+              <p class="text-sm text-slate-600">Panel de control y reportes.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-soft bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop"
+              alt="App Android"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="font-medium">App Android</p>
+              <p class="text-sm text-slate-600">Diseño limpio y usable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold">Proceso de trabajo</h2>
+        <div class="mt-8 grid md:grid-cols-4 gap-6">
+          <div class="rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">Paso 1</p>
+            <p class="font-semibold mt-2">Brief y objetivos</p>
+            <p class="text-sm text-slate-600 mt-1">
+              Definimos público, mensaje y métricas.
+            </p>
+          </div>
+          <div class="rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">Paso 2</p>
+            <p class="font-semibold mt-2">Diseño</p>
+            <p class="text-sm text-slate-600 mt-1">
+              Prototipo visual, paleta y tipografía.
+            </p>
+          </div>
+          <div class="rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">Paso 3</p>
+            <p class="font-semibold mt-2">Desarrollo</p>
+            <p class="text-sm text-slate-600 mt-1">
+              Código optimizado, seguridad y SEO.
+            </p>
+          </div>
+          <div class="rounded-2xl border p-6">
+            <p class="text-sm text-slate-500">Paso 4</p>
+            <p class="font-semibold mt-2">Lanzamiento</p>
+            <p class="text-sm text-slate-600 mt-1">
+              Pruebas, dominio, hosting y capacitación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes" class="py-16 bg-roseNeutral-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl font-bold">Planes</h2>
+          <p class="text-sm text-slate-500">
+            Valores referenciales, se ajustan a tu proyecto.
+          </p>
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl border bg-white p-6 card-hover">
+            <p class="text-sm font-medium text-roseNeutral-700">
+              Landing Publicitaria
+            </p>
+            <p class="text-3xl font-bold mt-2">Bs. 1.200</p>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2">
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Sección única + contacto
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Diseño personalizado
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Integración WhatsApp
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              class="mt-6 inline-block px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+              >Quiero este</a
+            >
+          </div>
+          <div class="rounded-2xl border bg-white p-6 card-hover">
+            <p class="text-sm font-medium text-roseNeutral-700">
+              Web Profesional
+            </p>
+            <p class="text-3xl font-bold mt-2">Bs. 2.900</p>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2">
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i>3–5
+                secciones
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Optimización SEO
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Formularios y analítica
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              class="mt-6 inline-block px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+              >Quiero este</a
+            >
+          </div>
+          <div class="rounded-2xl border bg-white p-6 card-hover">
+            <p class="text-sm font-medium text-roseNeutral-700">
+              Sistema a Medida
+            </p>
+            <p class="text-3xl font-bold mt-2">Desde Bs. 4.500</p>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2">
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Usuarios y roles
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i
+                >Reportes PDF/Excel
+              </li>
+              <li>
+                <i class="fa-solid fa-check mr-2 text-roseNeutral-700"></i>API e
+                integración
+              </li>
+            </ul>
+            <a
+              href="#contacto"
+              class="mt-6 inline-block px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+              >Quiero este</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVIDAD & APOYOS -->
+    <section id="creatividad" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-6">
+          <h2 class="text-3xl font-bold">Creatividad & Apoyos</h2>
+          <p class="text-sm text-slate-500 max-w-2xl">
+            Servicios adicionales para ayudarte en lo académico, lo creativo y
+            lo técnico sin sobrecargar la página.
+          </p>
+        </div>
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></span>
+              <h3 class="font-semibold">Apoyo académico</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Colegio, universidad y tareas de la carrera de Informática: guía,
+              estructuración, presentación y revisión.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-apoyo"
+            >
+              Ver más
+            </button>
+          </div>
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-file-lines"></i
+              ></span>
+              <h3 class="font-semibold">Diseños educativos</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Trípticos, mapas mentales y diapositivas hermosas para exponer o
+              imprimir.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-disenos"
+            >
+              Ver más
+            </button>
+          </div>
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-palette"></i
+              ></span>
+              <h3 class="font-semibold">Creatividad handmade</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Placas para mascotas con resina epóxica, bisutería y detalles
+              personalizados.
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-creatividad"
+            >
+              Ver más
+            </button>
+          </div>
+          <div class="card-hover rounded-2xl border p-6 bg-white">
+            <div class="flex items-center gap-3">
+              <span class="p-3 rounded-xl bg-roseNeutral-100"
+                ><i class="fa-solid fa-camera-cctv"></i
+              ></span>
+              <h3 class="font-semibold">Cámaras y redes</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              Instalación de cámaras de seguridad y redes (servicio realizado
+              junto a mi pareja).
+            </p>
+            <button
+              class="mt-4 text-roseNeutral-700 text-sm font-semibold underline"
+              data-modal-open="#modal-camaras"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10"
+      >
+        <div>
+          <h2 class="text-3xl font-bold">Hablemos de tu proyecto</h2>
+          <p class="mt-3 text-slate-600">
+            Cuéntame objetivos, plazos y referencias. Respondo con una propuesta
+            clara y tiempos realistas.
+          </p>
+          <div class="mt-6 space-y-3 text-sm">
+            <div>
+              <i class="fa-solid fa-envelope mr-2"></i>
+              <a href="mailto:dayana.g.medrano@gmail.com" class="underline"
+                >dayana.g.medrano@gmail.com</a
+              >
+            </div>
+            <div>
+              <i class="fa-brands fa-whatsapp mr-2"></i>
+              <a
+                href="https://wa.me/59170173385?text=Hola%2C%20quiero%20cotizar%20mis%20servicios"
+                target="_blank"
+                class="underline"
+                >+591 70173385</a
+              >
+            </div>
+          </div>
+          <div class="mt-8 p-4 rounded-xl bg-roseNeutral-50 border">
+            <p class="text-sm font-medium">Incluye:</p>
+            <ul class="mt-2 text-sm text-slate-600 list-disc pl-5 space-y-1">
+              <li>Dominio y hosting opcional</li>
+              <li>Certificado SSL y correo corporativo</li>
+              <li>Capacitación básica</li>
+            </ul>
+          </div>
+        </div>
+        <form
+          class="rounded-2xl border p-6 bg-white shadow-soft"
+          onsubmit="event.preventDefault(); alert('Gracias, me pondré en contacto.');"
+        >
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">Nombre</label>
+              <input
+                type="text"
+                class="mt-1 w-full rounded-xl border px-3 py-2"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Email</label>
+              <input
+                type="email"
+                class="mt-1 w-full rounded-xl border px-3 py-2"
+                placeholder="tucorreo@dominio.com"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Servicio</label>
+              <select class="mt-1 w-full rounded-xl border px-3 py-2">
+                <option>Página web publicitaria</option>
+                <option>Sistema web a medida</option>
+                <option>Aplicación Android</option>
+                <option>Diseño gráfico</option>
+                <option>Agendas personalizadas</option>
+                <option>Soporte y mantenimiento</option>
+                <option>
+                  Apoyo académico (colegio/universidad/Informática)
+                </option>
+                <option>
+                  Diseños educativos (trípticos/mapas mentales/diapositivas)
+                </option>
+                <option>Creatividad (placas para mascotas/bisutería)</option>
+                <option>Instalación de cámaras y redes</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Mensaje</label>
+              <textarea
+                class="mt-1 w-full rounded-xl border px-3 py-2"
+                rows="5"
+                placeholder="Cuéntame sobre tu idea..."
+              ></textarea>
+            </div>
+          </div>
+          <button
+            class="mt-4 w-full px-4 py-3 rounded-xl bg-roseNeutral-700 text-white font-semibold"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-roseNeutral-900 text-roseNeutral-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+      >
+        <div>
+          <p class="font-semibold">Creativa.dev</p>
+          <p class="text-sm text-roseNeutral-200">
+            Publicidad, sistemas web, apps y diseño.
+          </p>
+        </div>
+        <div class="text-sm">
+          <p>
+            Correo:
+            <a href="mailto:dayana.g.medrano@gmail.com" class="underline"
+              >dayana.g.medrano@gmail.com</a
+            >
+            · WhatsApp:
+            <a href="https://wa.me/59170173385" class="underline">70173385</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALES DETALLE (con galerías) -->
+    <div
+      id="modal-webpub"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Páginas web para publicidad</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Estructura de landing optimizada, copies, llamadas a la acción,
+          integración con WhatsApp, formularios y analítica. Diseño en tonos
+          neutro‑rosados, animaciones suaves y rendimiento.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Galería / Catálogo</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+              alt="Landing 1"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+              alt="Landing 2"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop"
+              alt="Landing 3"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-sistemas"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Sistemas web a medida</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Módulos de usuarios/roles, reportes PDF/Excel, notificaciones,
+          integración con pasarelas de pago y APIs. Código limpio y seguro.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Galería / Screens</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop"
+              alt="Dashboard"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop"
+              alt="Reportes"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
+              alt="Listado"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-android"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Aplicaciones Android</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Apps con login, base de datos, cámara/archivos y notificaciones.
+          Publicación en Play Store opcional o distribución directa por APK.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Capturas de Apps</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop"
+              alt="App 1"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1512499617640-c2f999098c4b?q=80&w=800&auto=format&fit=crop"
+              alt="App 2"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop"
+              alt="App 3"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-diseno"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Diseño gráfico</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Banners para redes, identidad visual, tarjetas, afiches y piezas para
+          anuncios. Entrega en formatos listos para impresión y web.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Muestras de Diseño</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop"
+              alt="Banner"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop"
+              alt="Identidad"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+              alt="Pieza social"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-agendas"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Agendas personalizadas</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Agendas digitales/impresas con tu logo, colores y secciones a medida:
+          finanzas, metas, hábitos, notas y más.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Galería de Agendas</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop"
+              alt="Agenda 1"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop"
+              alt="Agenda 2"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop"
+              alt="Agenda 3"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-soporte"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Soporte y mantenimiento</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Configuración de hosting, dominios, certificados SSL, correos
+          corporativos, backups y performance.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Certificados & Hosting</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop"
+              alt="Servidor"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1585079542156-2755d9c8affd?q=80&w=800&auto=format&fit=crop"
+              alt="SSL"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+              alt="Correo"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-apoyo"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Apoyo académico</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Asesoría para tareas y trabajos de colegio y universidad (incluida la
+          carrera de Informática): organización del contenido, diseño de la
+          presentación, referencias y revisión final. Enfoque ético: te ayudo a
+          aprender y presentar mejor.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Ejemplos</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop"
+              alt="Ensayo"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1584697964353-5877b1d7a25b?q=80&w=800&auto=format&fit=crop"
+              alt="Presentación"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=800&auto=format&fit=crop"
+              alt="Resumen"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Solicitar ayuda</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-disenos"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Diseños educativos</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Trípticos, mapas mentales y diapositivas hermosas (Google Slides,
+          PowerPoint o Canva). Entrego archivos editables y versión PDF lista
+          para imprimir o exponer.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Muestras</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=800&auto=format&fit=crop"
+              alt="Tríptico"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519817914152-22f90e7d54f8?q=80&w=800&auto=format&fit=crop"
+              alt="Mapa mental"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=800&auto=format&fit=crop"
+              alt="Diapositivas"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Pedir diseño</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-creatividad"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Creatividad handmade</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Placas para mascotas con resina epóxica (con nombre y contacto) y
+          bisutería personalizada. Paleta neutro‑rosadita y empaques bonitos
+          para regalo.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Catálogo</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1530650042284-1d01c0f4a234?q=80&w=800&auto=format&fit=crop"
+              alt="Placa mascota"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1520975922215-c0e1b5b9a6af?q=80&w=800&auto=format&fit=crop"
+              alt="Bisutería 1"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop"
+              alt="Bisutería 2"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Encargar ahora</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-camaras"
+      class="modal hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-black/50"
+    >
+      <div class="bg-white rounded-2xl max-w-2xl w-full p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Cámaras y redes</h3>
+          <button data-modal-close class="p-2">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">
+          Instalación de CCTV, configuración de NVR/DVR, cableado estructurado y
+          puestas en marcha de redes Wi‑Fi/LAN. Servicio realizado en equipo con
+          mi pareja.
+        </p>
+        <div class="mt-4">
+          <p class="text-sm font-medium">Instalaciones</p>
+          <div class="mt-2 grid grid-cols-3 gap-2 gallery">
+            <img
+              src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=800&auto=format&fit=crop"
+              alt="CCTV"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?q=80&w=800&auto=format&fit=crop"
+              alt="NVR/DVR"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop"
+              alt="Redes"
+              class="w-full h-24 object-cover rounded-lg cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <a
+            href="#contacto"
+            class="px-4 py-2 rounded-xl bg-roseNeutral-700 text-white text-sm font-semibold"
+            >Solicitar cotización</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div
+      id="lightbox"
+      class="hidden fixed inset-0 z-[80] bg-black/80 items-center justify-center p-4"
+    >
+      <img
+        id="lightboxImg"
+        src=""
+        alt="preview"
+        class="max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl"
+      />
+    </div>
+
+    <!-- SCRIPTS UI -->
+    <script>
+      // Mobile nav toggle
+      document.getElementById("menuBtn").addEventListener("click", () => {
+        document.getElementById("mobileNav").classList.toggle("hidden");
+      });
+
+      // Modal open/close
+      document.querySelectorAll("[data-modal-open]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = document.querySelector(
+            btn.getAttribute("data-modal-open")
+          );
+          if (!target) return;
+          target.classList.remove("hidden");
+          target.classList.add("flex");
+        });
+      });
+
+      document.querySelectorAll("[data-modal-close]").forEach((btn) => {
+        btn.addEventListener("click", () =>
+          btn.closest(".modal").classList.add("hidden")
+        );
+      });
+
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) modal.classList.add("hidden");
+        });
+      });
+
+      // Lightbox handler para todas las galerías
+      (function () {
+        function bindLightbox() {
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = document.getElementById("lightboxImg");
+          document.querySelectorAll(".gallery img").forEach((img) => {
+            img.addEventListener("click", () => {
+              lightboxImg.src = img.src;
+              lightbox.classList.remove("hidden");
+              lightbox.classList.add("flex");
+            });
+          });
+          lightbox.addEventListener("click", () => {
+            lightbox.classList.add("hidden");
+            lightbox.classList.remove("flex");
+            lightboxImg.src = "";
+          });
+        }
+        if (document.readyState !== "loading") bindLightbox();
+        else document.addEventListener("DOMContentLoaded", bindLightbox);
+      })();
+    </script>
+  </body>
+</html>
